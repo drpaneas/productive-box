@@ -4,6 +4,7 @@ on:
     branches:
       - master
   schedule:
+  # Push in the end of the day (midnight)
     - cron: "0 0 * * *"
 jobs:
   update-gist:
@@ -14,5 +15,5 @@ jobs:
         uses: maxam2017/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 9842e074b8ee46aef76fd0d493bae0ed
-          TIMEZONE: Asia/Taipei
+          GIST_ID: a613a59e39451e7dd14c361e41128aed
+          TIMEZONE: Europe/Berlin
