@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-  # Push in the end of the day (midnight)
+    # Push in the end of the day
     - cron: "0 0 * * *"
 jobs:
   update-gist:
